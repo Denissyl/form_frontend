@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<form class="form_question" id="form">
+    <span class="form_input_title">Задать вопрос</span>
+    <input pattern="^[А-ЯЁа-яё\s\-]+$" title="только русские буквы, пробелы, тире. Цифры, англ. буквы – нельзя"
+           class="form_input" type="text" name="name" placeholder="Фамилия Имя Отчество *">
+    <input pattern="[\+7|8|7]{1,2}[\-|\s]{0,1}[0-9]{3}[\-|\s]{0,1}[0-9]{3}[\-|\s]{0,1}[0-9]{2}[\-|\s]{0,1}[0-9]{2}"
+           title="только цифры, “-”, пробелы, “+”"
+           class="form_input" type="tel" name="phone" placeholder="Телефон *">
+    <input patter="^[a-z0-9\.\_\%\+\-]+\@[a-z0-9.-]+\.[a-z]{2,10}$" title="только строки соответствующие формату email"
+            class="form_input" type="email" name="email" placeholder="Email">
+    <input formaction="https://60376bfd5435040017722533.mockapi.io/form"
+            class="form_submit" type="submit" formmethod="post" form="form" value="ОТПРАВИТЬ ЗАПРОС">
+</form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+input
+{
+    font: inherit;
+}
+
+.form_question {
+    width: 481px;
+    height: 392px;
+    background-color: #f7f5f9;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.form_input_title {
+    display: block;
+    margin-left:40px;
+    margin-top:40px;
+    width: 168px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 20px;
+    height: 20px;
+}
+
+.form_input {
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    width: 401px;
+    height:48px;
+    margin-top: 25px;
+    padding-left: 14px;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+}
+
+.form_submit:hover{
+    border: 1px solid #854FC8;
+}
+
+.form_input:hover {
+    border: 1px solid #DBA5F5;
+}
+
+.form_input:focus {
+    border: 1px solid #854fc8;
+}
+
+.form_submit {
+    background: #6979F8;
+    border-radius: 6px;
+    width: 401px;
+    height:48px;
+    margin-top: 25px;
+    border: 0;
+    text-align: center;
+    font-size: 17px;
+    color: #FFFFFF;
+}
